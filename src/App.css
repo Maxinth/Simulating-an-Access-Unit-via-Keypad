@@ -1,22 +1,165 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+.App h1,
+h2 {
+  font-family: "Raleway", sans-serif;
   text-align: center;
+  margin: 0.7rem 0 0;
+  font-weight: 700;
+  /* font-size: 1rem; */
 }
 
-.App-logo {
-  height: 40vmin;
+h2 {
+  font-size: 1rem;
+  margin: unset 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.keyPadBtnContainer {
+  border: 5px solid ghostwhite;
+  border-radius: 30px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 1px 1px;
+  margin-bottom: 40px;
+  border-bottom-color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+.accessKey {
+  /* border: 1px solid red; */
+  max-width: 900px;
+  /* width: 100%; */
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 331px;
+  border-radius: 10px;
+  background-color: hsl(240, 21%, 10%);
+  padding-bottom: 0.1px;
+}
+.displayContainer {
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 3px;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+  font-family: "Open Sans", sans-serif;
+}
+.keyPad {
+  /* border: 2px solid red; */
+  height: 40vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+
+  /* padding: 10px 20px 10px; */
+  padding: 19px 15px 10px 1px;
 }
 
-.App-link {
-  color: #09d3ac;
+.buttonNumber {
+  flex-basis: 90px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  outline: none;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.buttonNumber:first-of-type {
+  order: 2;
+}
+
+.buttonNumber:nth-last-of-type(2) {
+  order: 2;
+}
+
+.buttonNumber:nth-last-of-type(3) {
+  order: 4;
+}
+
+.buttonNumber:nth-last-of-type(4) {
+  order: 3;
+}
+
+.buttonNumber:nth-last-of-type(5) {
+  order: 5;
+}
+.buttonNumber:last-of-type {
+  order: 1;
+}
+
+.buttonNumber:hover,
+.buttonNumber:active {
+  color: white;
+  background-color: black;
+  border: 1px solid grey;
+}
+.buttonNumber:disabled {
+  color: white;
+  background-color: hsl(0, 52%, 56%);
+}
+
+.buttonNumber:disabled:hover {
+  background-color: white;
+  color: hsl(0, 52%, 56%);
+}
+
+.access {
+  border: 7px ridge black;
+  margin-bottom: 40px;
+  padding: 15px;
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 30px;
+  box-sizing: border-box;
+  font-weight: bolder;
+  letter-spacing: 0.4rem;
+  height: 92px;
+  font-family: "Lato";
+  background: ghostwhite;
+}
+
+.access span {
+  position: relative;
+  /* bottom: 1px; */
+  top: 3px;
+  font-size: 25px;
+  font-family: "Open sans";
+  letter-spacing: 0.8px;
+}
+
+.access span.entry {
+  top: 1px;
+  letter-spacing: 8.5px;
+  font-size: 35px;
+}
+
+.step-feedBack {
+  border: 1px solid ghostwhite;
+}
+
+.welcome {
+  position: relative;
+  right: 5px;
+  top: 10px;
+  background: white;
+  width: 280px;
+  text-align: center;
+  padding: 40px;
+  font-weight: bolder;
+  font-size: 30px;
+  border-radius: 5px;
+
+  font-family: "Raleway", sans-serif;
+}
+
+.welcome p {
+  font-size: 17px;
+  margin-top: 2px;
+}
+
+.welcome p > span {
+  text-decoration: underline;
 }
